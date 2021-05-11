@@ -105,9 +105,7 @@ export default function App() {
       <Route exact path="/">
         <UserList users={users} />
       </Route>
-      <Route path="/user/:id">
-        <UserRoute />
-      </Route>
+      <Route path="/user/:id" component={UserRoute} />
     </div>
   );
 }
